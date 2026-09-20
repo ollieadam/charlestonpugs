@@ -1,0 +1,93 @@
+/* charlestonpugs.com — staged cream/black */
+:root{
+  --cream:#f7f4ef; --ink:#000; --muted:#4a4a4a; --line:#d9d2c8; --wash:#efebe4;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;background:var(--cream);color:var(--ink);line-height:1.55}
+a{color:var(--ink)} img{max-width:100%;display:block;height:auto}
+.wrap{width:min(1080px,92vw);margin:0 auto}
+.kicker{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.btn{display:inline-block;padding:.85rem 1.15rem;border:1px solid var(--ink);text-decoration:none;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.btn-fill{background:var(--ink);color:var(--cream)}
+.btn-ghost{background:transparent}
+.btn-row{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.25rem}
+nav{border-bottom:1px solid var(--line);background:var(--cream);position:sticky;top:0;z-index:20}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0}
+.logo{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;font-weight:700}
+.nav-links{display:flex;flex-wrap:wrap;gap:.9rem;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+.hero{padding:3.5rem 0 2.5rem;display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:.95;margin:.35rem 0 1rem;font-weight:700}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:34rem}
+.hero-img{border:1px solid var(--line);background:var(--wash)}
+.hero-img img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.offer{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;padding:0 0 2.5rem}
+.offer article{border:1px solid var(--line);padding:1.1rem 1rem;background:#fff}
+.offer h3{margin:0 0 .35rem;font-size:1.05rem}
+.offer p{margin:0;color:var(--muted);font-size:.95rem}
+.social-hub{padding:2.5rem 0 3rem;border-top:1px solid var(--line)}
+.social-hub h2{font-size:clamp(1.8rem,4vw,2.6rem);margin:.3rem 0 1rem}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.card{border:1px solid var(--ink);padding:1.35rem;background:#fff;min-height:11rem;display:flex;flex-direction:column;justify-content:space-between}
+.card h3{margin:0 0 .5rem;font-size:1.25rem}
+.card p{margin:0;color:var(--muted)}
+.section{padding:2.75rem 0;border-top:1px solid var(--line)}
+.section h1,.section h2{margin-top:0}
+.muted{color:var(--muted)}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.photo{border:1px solid var(--line);background:var(--wash)}
+.photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+ul.clean{padding-left:1.1rem}
+ul.clean li{margin:.4rem 0}
+.contact-list{display:grid;gap:.85rem;margin:1.25rem 0}
+.contact-list a{display:block;border:1px solid var(--line);padding:1rem;text-decoration:none;background:#fff}
+.contact-list strong{display:block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.25rem}
+footer{border-top:1px solid var(--line);padding:1.5rem 0 2.5rem;margin-top:1rem;font-size:.92rem;color:var(--muted)}
+footer .whisper{margin-top:.75rem}
+.note{font-size:.92rem;color:var(--muted);border-left:2px solid var(--line);padding-left:.9rem;margin:1rem 0}
+@media(max-width:820px){
+  .hero,.offer,.cards,.grid-2{grid-template-columns:1fr}
+  .nav-links{display:none}
+}
+
+.hero-img{border:1px solid var(--line);background:var(--wash)}
+.hero-img img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.section{padding:2.75rem 0}
+.section h1{font-size:clamp(2rem,5vw,3rem);margin:.35rem 0 1rem}
+.section h2{margin:1.75rem 0 .6rem;font-size:1.35rem}
+.btn-row{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.25rem}
+.btn{display:inline-block;padding:.85rem 1.15rem;border:1px solid var(--ink);text-decoration:none;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.btn-fill{background:var(--ink);color:var(--cream)}
+.btn-ghost{background:transparent}
+.contact-list{display:grid;gap:.85rem;margin:1.25rem 0}
+.contact-list a{display:block;border:1px solid var(--line);padding:1rem;text-decoration:none;background:#fff;color:var(--ink)}
+.contact-list strong{display:block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.25rem}
+.note{font-size:.92rem;color:var(--muted);border-left:2px solid var(--line);padding-left:.9rem;margin:1rem 0}
+ul.clean{padding-left:1.1rem}
+ul.clean li{margin:.4rem 0}
+.kicker{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+.offer-card{text-decoration:none;color:inherit;display:block}
+.offer-card article{height:100%;transition:border-color .15s}
+.offer-card:hover article{border-color:var(--ink)}
+
+.price-menu{list-style:none;padding:0;margin:1rem 0 1.25rem;border:1px solid var(--line);background:#fff}
+.price-menu li{padding:.95rem 1.1rem;border-bottom:1px solid var(--line)}
+.price-menu li:last-child{border-bottom:0}
+.reel-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0 1.5rem}
+@media(max-width:820px){.reel-grid{grid-template-columns:1fr}}
+
+.reel-grid.three{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.reel-grid.three{grid-template-columns:1fr}}
+
+.reel-frame{background:#fff;border:1px solid var(--line,#d9d2c8);overflow:hidden}
+.reel-frame iframe{display:block;width:100%;height:720px;border:0;background:#fafafa}
+.reel-fallback{margin:0;padding:.6rem .85rem;font-size:.85rem;border-top:1px solid var(--line,#d9d2c8)}
+.reel-fallback a{color:inherit}
+@media(max-width:820px){.reel-frame iframe{height:640px}}
+
+.still-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0 1.5rem}
+.still-grid .photo{margin:0}
+.still-grid img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5;display:block}
+@media(max-width:820px){.still-grid{grid-template-columns:1fr}}
