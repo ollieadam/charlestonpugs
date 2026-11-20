@@ -64,6 +64,9 @@
   <p><strong>The puppies have arrived.</strong> Barbie delivered three puppies on
     <strong>November 12–13, 2026</strong>. Mom and puppies
     are in North Charleston, and you can watch them grow up on the live Puppy Cam.</p>
+  <p><strong>AKC-registered litter.</strong> Both parents are AKC-registered, this litter is
+    registered with the AKC, and each puppy's AKC registration is <strong>prepaid</strong> —
+    no AKC registration fee is due from the new owner.</p>
   <p>We don't list prices or make promises on this page. Questions about this litter? Send an
     <a href="inquire.html">inquire</a> — and day-to-day puppy photos and videos post on Instagram and
     Facebook first.</p>
@@ -123,9 +126,10 @@ const LITTERS = [
     mom: "Barbie", momLine: "Dermit line",
     dad: "Hank", dadLine: "Party Timez · Hoopla lines",
     dateLabel: "Born", date: "Nov 12–13, 2026",
-    count: "3 puppies",
+    count: "3 puppies — all girls",
     photo: "",
     notes: "Three puppies arrived on Nov 12–13, 2026. Questions about this litter? Send an inquire.",
+    akc: "AKC-registered litter — each puppy's AKC registration is prepaid.",
     camLink: true
   }
 ];
@@ -149,6 +153,7 @@ const LITTERS = [
         + esc(l.mom) + "'s litter" + '" loading="lazy"></figure>';
     }
     if (l.notes) html += '<p class="notes">' + esc(l.notes) + '</p>';
+    if (l.akc) html += '<p class="notes"><strong>' + esc(l.akc) + '</strong></p>';
     if (l.camLink) {
       html += '<div class="btn-row"><a class="btn btn-fill" href="puppy-cam.html">'
         + 'Watch on the Puppy Cam</a></div>';
